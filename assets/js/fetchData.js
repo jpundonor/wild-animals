@@ -1,6 +1,6 @@
 const fetchData = async () => {
   try {
-    const response = await fetch("../../animales.json");
+    const response = await fetch("https://jpundonor.github.io/wild-animals/animales.json");
     if (!response.ok) {
       throw new Error("Error al cargar el archivo JSON");
     }
