@@ -93,7 +93,7 @@ const addAnimalToTable = (animal) => {
 
   // Create img of animal
   const img = document.createElement("img");
-  img.src = `../../assets/imgs/${animal.getImg()}`;
+  img.src = `./assets/imgs/${animal.getImg()}`;
   img.className = "card-img-top";
   img.style.height = "100%";
 
@@ -103,7 +103,7 @@ const addAnimalToTable = (animal) => {
 
   // Create img of button
   const imgButton = document.createElement("img");
-  imgButton.src = "../../assets/imgs/audio.svg";
+  imgButton.src = "./assets/imgs/audio.svg";
   imgButton.style.width = "20px";
 
   // Create audio element
