@@ -64,7 +64,7 @@ const createAnimal = () => {
 const getImage = async (animalImage) => {
   const dataImage = await fetchData();
   const img = dataImage.animales.find((a) => a.imagen == animalImage);
-  return `../../assets/imgs/${img.imagen}`;
+  return `./assets/imgs/${img.imagen}`;
 };
 
 // Event to change image of animal
@@ -130,7 +130,7 @@ const addAnimalToTable = (animal) => {
 
 // Play sound of animal
 const getSoundAnimal = (audio) => {
-  const sound = new Audio(`../../assets/sounds/${audio}`);
+  const sound = new Audio(`./assets/sounds/${audio}`);
   sound.play();
 };
 
@@ -169,7 +169,7 @@ const openModal = (animal) => {
 
   // Create img of animal
   const img = document.createElement("img");
-  img.src = `../../assets/imgs/${animal.getImg()}`;
+  img.src = `./assets/imgs/${animal.getImg()}`;
   img.className = "img-fluid";
   
   // Create age of animal
